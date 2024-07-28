@@ -1,0 +1,53 @@
+.outerMostContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperContainer {
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #000000;
+  background-color: #333;
+  border-bottom: none;
+  border-radius: 52px 52px 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px 0px;
+  width: 95%;
+}
+
+.lowerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  background: #ffffff;
+  border: 4px solid #000000;
+  padding: 25px 25px 35px;
+  border-radius: 30px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.singlePost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
