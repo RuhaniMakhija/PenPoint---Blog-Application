@@ -1,4 +1,38 @@
+.outerMostContainer {
+  display: flex;
+  padding: 2% 8%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
 .list li {
   text-decoration: none;
   list-style-type: none;
+  color: white;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 42px */
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+.leftSection {
+  display: flex;
+}
+
+.rightSection {
+  display: flex;
+  gap: 15px;
+}
+
+.socialMediaLogo {
+  cursor: pointer;
 }
