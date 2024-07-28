@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import Layout from "@/layout";
 import FeaturedPosts from "@/components/FeaturedPosts";
+import Post from "@/components/Post";
 import SocialPlugin from "@/components/SocialPlugin";
 import MostPopular from "@/components/MostPopular";
 import RandomPosts from "@/components/RandomPosts";
@@ -30,6 +31,7 @@ export default function Home() {
           <RandomPosts />
           <SubscribeUs />
           <Tags />
+          <FeaturedPosts /> <Post />
         </Layout>
       </main>
     </>
