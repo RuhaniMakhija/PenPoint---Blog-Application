@@ -1,8 +1,7 @@
 .featuredContainer {
   border: 2px solid black;
-  width: 80vw;
+  width: 100%;
   background: #f8f4b2;
-  margin-left: 5vw;
   margin-bottom: 20px;
   border-radius: 30px;
   margin-top: 20px;

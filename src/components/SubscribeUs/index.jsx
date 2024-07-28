@@ -11,8 +11,8 @@ const SubscribeUs = () => {
         </div>
         <div className={classes.lowerContainer}>
           <iframe
-            width="420"
-            height="315"
+            width="auto"
+            height="auto"
             src="https://www.youtube.com/embed/S_zNSLIQRbE?autoplay=1&mute=1"
           ></iframe>
         </div>

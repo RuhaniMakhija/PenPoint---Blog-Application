@@ -24,14 +24,8 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          {" "}
           <FeaturedPosts />
-          <SocialPlugin />
-          <MostPopular />
-          <RandomPosts />
-          <SubscribeUs />
-          <Tags />
-          <FeaturedPosts /> <Post />
+          <Post />
         </Layout>
       </main>
     </>
