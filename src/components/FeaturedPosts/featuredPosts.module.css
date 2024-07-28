@@ -1,0 +1,42 @@
+.featuredContainer {
+  border: 2px solid black;
+  width: 80vw;
+  background: #f8f4b2;
+  margin-left: 5vw;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.innerConatiner {
+  border: 2px solid black;
+  background: black;
+  color: white;
+  padding: 230px 20px 20px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.featuredPostContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+  padding: 15px;
+}
+
+.mainHeading {
+  cursor: pointer;
+  margin: 0 0 15px;
+}
+
+.mainHeading:hover {
+  color: #d4392b;
+}
+
+.postedBy {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0 1px;
+}

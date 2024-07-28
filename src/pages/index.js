@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 
 import Layout from "@/layout";
+import FeaturedPosts from "@/components/FeaturedPosts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Layout />
+        <Layout>
+          {" "}
+          <FeaturedPosts />{" "}
+        </Layout>
       </main>
     </>
   );
