@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import Layout from "@/layout";
 import FeaturedPosts from "@/components/FeaturedPosts";
+import Post from "@/components/Post";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function Home() {
       <main>
         <Layout>
           {" "}
-          <FeaturedPosts />{" "}
+          <FeaturedPosts /> <Post />
         </Layout>
       </main>
     </>
