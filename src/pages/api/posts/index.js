@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 export default async function handler(req, res) {
   if (req.method === "GET") {
     try {
-      const users = await prisma.user.findMany();
+      const users = await prisma.BlogPost.findMany();
       res.status(200).json(users);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -15,15 +15,17 @@ export default async function handler(req, res) {
   } else if (req.method === "POST") {
     try {
       const data = req.body;
-      const { body, email } = data;
-      const newpost = await prisma.post.create({
+      const { text, body, url, image, email } = data;
+      const newpost = await prisma.BlogPost.create({
         data: {
-          ...body,
-          email,
+          text,
+          body,
           url,
+          image,
+          email,
         },
       });
-      res.status(201).json(newUser);
+      res.status(201).json(newpost);
     } catch (error) {
       console.error("Error creating user:", error);
       res.status(500).json({ message: "Internal Server Error" });

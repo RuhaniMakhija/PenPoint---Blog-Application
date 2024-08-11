@@ -1,8 +1,11 @@
+-- AlterTable
+ALTER TABLE `Post` MODIFY `body` VARCHAR(191) NOT NULL;
+
 -- CreateTable
-CREATE TABLE `Post` (
+CREATE TABLE `Posts` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `title` VARCHAR(191) NOT NULL,
-    `body` TEXT NOT NULL,
+    `body` VARCHAR(191) NOT NULL,
     `url` VARCHAR(191) NULL,
     `image` VARCHAR(191) NULL,
     `email` VARCHAR(191) NOT NULL,

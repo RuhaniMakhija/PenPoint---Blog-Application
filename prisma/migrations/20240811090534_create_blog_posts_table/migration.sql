@@ -1,7 +1,7 @@
 -- CreateTable
-CREATE TABLE `Post` (
+CREATE TABLE `BlogPost` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `title` VARCHAR(191) NOT NULL,
+    `text` VARCHAR(191) NOT NULL,
     `body` TEXT NOT NULL,
     `url` VARCHAR(191) NULL,
     `image` VARCHAR(191) NULL,

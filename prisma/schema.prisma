@@ -28,3 +28,21 @@ model Post {
   image String?
   email String
 }
+
+model Posts {
+  id    Int    @id @default(autoincrement())
+  title String
+  body  String
+  url   String?
+  image String?
+  email String
+}
+
+model BlogPost {
+  id    Int    @id @default(autoincrement())
+  text  String
+  body  String @db.Text   // Set body to have maximum length using @db.Text
+  url   String?
+  image String?
+  email String
+}
