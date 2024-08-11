@@ -10,6 +10,7 @@ import MostPopular from "@/components/MostPopular";
 import RandomPosts from "@/components/RandomPosts";
 import SubscribeUs from "@/components/SubscribeUs";
 import Tags from "@/components/TagsComponent";
+import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +24,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Layout>
-          <FeaturedPosts />
-          <Post />
-        </Layout>
+        <SessionProvider>
+          <Layout>
+            <FeaturedPosts />
+            <Post />
+          </Layout>
+        </SessionProvider>
       </main>
     </>
   );

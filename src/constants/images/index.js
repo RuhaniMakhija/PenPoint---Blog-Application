@@ -10,3 +10,7 @@ export const FACEBOOK_BLACK = `${CDN_URL}/facebook_black.png?alt=media`;
 export const INSTAGRAM_BLACK = `${CDN_URL}/instagram_black.png?alt=media`;
 export const TELEGRAM_BLACK = `${CDN_URL}/telegram_black.png?alt=media`;
 export const LINKEDIN_BLACK = `${CDN_URL}/linkedin_black.png?alt=media`;
+export const EXTERNAL = `${CDN_URL}/external.png?alt=media`;
+export const VIDEO = `${CDN_URL}/video.png?alt=media`;
+export const IMAGE = `${CDN_URL}/image.png?alt=media`;
+export const PLUS = `${CDN_URL}/plus.png?alt=media`;

@@ -6,8 +6,22 @@ import {
   INSTAGRAM_LOGO,
   YOUTUBE_LOGO,
 } from "@/constants/images";
+import { signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
+  const { status } = useSession();
+  const handleLoginLogout = () => {
+    if (status == "authenticated") {
+      signOut();
+      router.push("/");
+    } else {
+      router.push("/login");
+    }
+  };
+  console.log("The status from header is:", status);
   return (
     <div className={classes.outerMostContainer}>
       <div className={classes.leftSection}>
@@ -50,6 +64,9 @@ const Header = () => {
           alt={"youtube_logo"}
           className={classes.socialMediaLogo}
         />
+        <p className={classes.loginBtn} onClick={handleLoginLogout}>
+          {status == "authenticated" ? "Logout" : "Login"}
+        </p>
       </div>
     </div>
   );

@@ -11,40 +11,43 @@ import MostPopular from "@/components/MostPopular";
 import RandomPosts from "@/components/RandomPosts";
 import SubscribeUs from "@/components/SubscribeUs";
 import Tags from "@/components/TagsComponent";
+import AuthProvider from "@/providers/AuthProvider";
 
 const Layout = ({ children, rightSideBar, style }) => {
   const [expand, setexpand] = useState(true);
 
   return (
     <>
-      <main className="main-wrapper">
-        <Header />
-        <div
-          className="page-wrapper"
-          style={{
-            display: "flex",
-            gap: "5%",
-            margin: "5vh 0 5vh 5vw",
-          }}
-        >
-          <div style={{ width: "60vw" }}>{children}</div>
+      <AuthProvider>
+        <main className="main-wrapper">
+          <Header />
           <div
+            className="page-wrapper"
             style={{
               display: "flex",
-              flexDirection: "column",
-              gap: "50px",
-              maxWidth: "25vw",
+              gap: "5%",
+              margin: "5vh 0 5vh 5vw",
             }}
           >
-            <SocialPlugin />
-            <MostPopular />
-            <RandomPosts />
-            <SubscribeUs />
-            <Tags />
+            <div style={{ width: "60vw" }}>{children}</div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "50px",
+                maxWidth: "25vw",
+              }}
+            >
+              <SocialPlugin />
+              <MostPopular />
+              <RandomPosts />
+              <SubscribeUs />
+              <Tags />
+            </div>
           </div>
-        </div>
-        <Footer />
-      </main>
+          <Footer />
+        </main>
+      </AuthProvider>
     </>
   );
 };
