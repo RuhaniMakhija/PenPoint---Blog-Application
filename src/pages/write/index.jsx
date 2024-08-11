@@ -64,10 +64,9 @@ const WritePage = () => {
   useEffect(() => {
     if (status === "loading") {
       // Handle loading state if needed
+    } else if (status === "unauthenticated") {
+      router.push("/");
     }
-    // else if (status === "unauthenticated") {
-    //   router.push("/");
-    // }
   }, [status, router]);
 
   const slugify = (str) =>
